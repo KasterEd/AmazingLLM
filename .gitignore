@@ -2,5 +2,6 @@
 *.log
 *.txt
 *.bak
+data
 .env
-requirements.txt
+requirements.txtls
