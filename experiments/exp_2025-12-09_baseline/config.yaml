@@ -1,0 +1,28 @@
+experiment_name: "exp_2025-12-09_baseline"
+
+data:
+  train_path: "data/raw/train.csv"
+  eval_split_ratio: 0.1
+  max_length: 512
+
+model:
+  base_model_name: "meta-llama/Meta-Llama-3-8B-Instruct"
+  lora_r: 8
+  lora_alpha: 16
+  lora_dropout: 0.05
+
+training:
+  batch_size: 8
+  gradient_accumulation_steps: 2
+  num_epochs: 3
+  learning_rate: 1e-4
+  weight_decay: 0.01
+  warmup_ratio: 0.03
+  logging_steps: 50
+  eval_steps: 200
+  save_steps: 200
+
+output:
+  output_dir: "experiments/exp_2025-12-09_baseline/checkpoints"
+  log_file: "experiments/exp_2025-12-09_baseline/training_log.txt"
+  metrics_file: "experiments/exp_2025-12-09_baseline/metrics.json"

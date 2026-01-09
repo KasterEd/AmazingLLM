@@ -5,3 +5,18 @@
 data
 .env
 requirements.txtls
+# venv
+.venv/
+__pycache__/
+
+# data
+data/raw/
+data/processed/
+
+# experiments
+experiments/**/checkpoints/
+experiments/**/training_log.txt
+experiments/**/metrics.json
+
+# notebooks
+*.ipynb_checkpoints/
