@@ -13,7 +13,7 @@
 
 source .env/bin/activate
 
-#hf auth login --token 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
+#hf auth login --token [REDACTED]
 
 python experiments/exp_2026_01_03_baseline/predict.py \
   --data_dir data/processed/saq_llama_v1 \
